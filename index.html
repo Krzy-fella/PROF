@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nana Osei — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container flex">
+      <div class="logo">
+        <div class="logo-icon">TO</div>
+        <div class="logo-text">
+          <div class="company">Top Official</div>
+          <div class="sub">Software & Systems</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <h1 class="hero-title">Nana Osei — Software Engineer</h1>
+      <p class="hero-desc">
+        I design and build fast, clean web applications and digital services for modern organizations.
+      </p>
+      <div class="hero-actions">
+        <a href="CV.pdf" class="btn btn-primary">Download CV</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">Credentials</h2>
+      <ul class="credentials-list">
+        <li>Full‑stack developer with web & backend focus</li>
+        <li>Primary: JavaScript, TypeScript, HTML/CSS</li>
+        <li>Frameworks: React, Node.js, Express (or tools you use)</li>
+        <li>Tools: Git, VS Code, deployment on Vercel/Netlify</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3 class="project-title">Portfolio Web App</h3>
+          <p class="project-desc">
+            A clean, responsive portfolio site built to showcase my full‑stack projects.
+          </p>
+          <div class="project-tech">React, Tailwind CSS</div>
+        </article>
+        <article class="project-card">
+          <h3 class="project-title">Simple Task Manager</h3>
+          <p class="project-desc">
+            A lightweight task manager that stores tasks in the browser and updates the UI in real time.
+          </p>
+          <div class="project-tech">JavaScript, localStorage</div>
+        </article>
+        <article class="project-card">
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">
+            Fetches weather data from a public API and displays current conditions and forecasts.
+          </p>
+          <div class="project-tech">React, API integration</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input name="name" type="text" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <span id="status" class="status"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Top Official — Built by Nana Osei.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
